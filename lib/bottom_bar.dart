@@ -1,4 +1,8 @@
+import 'package:cureit/screens/FAQ_page/faq_page.dart';
+import 'package:cureit/screens/profile_page/profile_page.dart';
 import 'package:flutter/material.dart';
+import './screens/home_page/health_issues.dart';
+import './screens/book_appointment/book_appointment.dart';
 
 // /// This is the stateful widget that the main application instantiates.
 class MyStatefulWidget extends StatefulWidget {
@@ -14,22 +18,10 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   static const TextStyle optionStyle =
       TextStyle(fontSize: 30, fontWeight: FontWeight.bold, color: Colors.black);
   static const List<Widget> _widgetOptions = <Widget>[
-    Text(
-      'Page 0: Home',
-      style: optionStyle,
-    ),
-    Text(
-      'Page 1: Appointments',
-      style: optionStyle,
-    ),
-    Text(
-      'Page 2: FAQ Section',
-      style: optionStyle,
-    ),
-    Text(
-      'Page 3: Your profile',
-      style: optionStyle,
-    ),
+    HealthIssues(),
+    BookAppointment(),
+    FAQS(),
+    MyProfile(),
   ];
 
   void _onItemTapped(int index) {
