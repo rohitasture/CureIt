@@ -1,7 +1,7 @@
 import 'package:cureit/screens/FAQ_page/faq_page.dart';
 import 'package:cureit/screens/profile_page/profile_page.dart';
 import 'package:flutter/material.dart';
-import './screens/home_page/health_issues.dart';
+import 'screens/home_page/components/health_issues.dart';
 import './screens/book_appointment/book_appointment.dart';
 
 // /// This is the stateful widget that the main application instantiates.
