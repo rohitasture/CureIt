@@ -36,6 +36,9 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter_svg: ^0.22.0 
   dio: ^4.0.0
+  form_field_validator: ^1.1.0
+  getwidget: ^2.0.4
+  font_awesome_flutter: ^9.1.0
 
 dev_dependencies:
   flutter_test:

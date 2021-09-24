@@ -15,13 +15,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Cure It',
-      theme: appTheme,
-      home: WelcomeScreen(),
-      // We use routeName so that we dont need to remember the name
-      // initialRoute: HomeScreen.routeName,
-      // routes: routes,
-    );
+        debugShowCheckedModeBanner: false,
+        title: 'Cure It',
+        theme: appTheme,
+        home: SafeArea(child: WelcomeScreen())
+        // We use routeName so that we dont need to remember the name
+        // initialRoute: HomeScreen.routeName,
+        // routes: routes,
+        );
   }
 }
