@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 class SignInPage extends StatefulWidget {
   const SignInPage({Key? key}) : super(key: key);
-
+  static String routeName = "/signin";
   @override
   _SignInPageState createState() => _SignInPageState();
 }
@@ -61,8 +61,7 @@ class _SignInPageState extends State<SignInPage> {
                   borderRadius: BorderRadius.circular(10), color: Colors.amber),
               child: MaterialButton(
                 onPressed: () async {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => HomeScreen()));
+                  Navigator.pushNamed(context, HomeScreen.routeName);
                 },
                 child: Text('Login'),
               ),

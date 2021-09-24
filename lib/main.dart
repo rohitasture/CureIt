@@ -1,4 +1,3 @@
-import 'package:cureit/screens/home_page/home_page.dart';
 import 'package:cureit/screens/welcome/welcome_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:cureit/routes.dart';
@@ -18,10 +17,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Cure It',
       theme: appTheme,
-      home: WelcomeScreen(),
-      // We use routeName so that we dont need to remember the name
-      // initialRoute: HomeScreen.routeName,
-      // routes: routes,
+      //home: WelcomeScreen(),
+      initialRoute: WelcomeScreen.routeName,
+      routes: routes,
     );
   }
 }

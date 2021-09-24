@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({Key? key}) : super(key: key);
-
+  static String routeName = "/welcome";
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,8 +24,7 @@ class WelcomeScreen extends StatelessWidget {
           child: MaterialButton(
             onPressed: () async {
               //Route to Register Page
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => SignUpPage()));
+              Navigator.pushNamed(context, SignUpPage.routeName);
             },
             child: Text('Sign Up'),
           ),
@@ -39,8 +38,7 @@ class WelcomeScreen extends StatelessWidget {
           child: MaterialButton(
             onPressed: () {
               //Route to Sign In Page
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => SignInPage()));
+              Navigator.pushNamed(context, SignInPage.routeName);
             },
             child: Text('Sign In'),
           ),

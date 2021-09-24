@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 class SignUpPage extends StatefulWidget {
   const SignUpPage({Key? key}) : super(key: key);
-
+  static String routeName = "/signup";
   @override
   _SignUpPageState createState() => _SignUpPageState();
 }
@@ -61,8 +61,7 @@ class _SignUpPageState extends State<SignUpPage> {
                   borderRadius: BorderRadius.circular(10), color: Colors.amber),
               child: MaterialButton(
                 onPressed: () async {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => HomeScreen()));
+                  Navigator.pushNamed(context, HomeScreen.routeName);
                 },
                 child: Text('Register'),
               ),

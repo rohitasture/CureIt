@@ -1,3 +1,5 @@
+import 'package:cureit/screens/FAQ_page/faq_page.dart';
+import 'package:cureit/screens/book_appointment/book_appointment.dart';
 import 'package:cureit/screens/profile_page/profile_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -48,12 +50,23 @@ class CustomBottomNavBar extends StatelessWidget {
                     Navigator.pushNamed(context, HomeScreen.routeName),
               ),
               IconButton(
-                icon: SvgPicture.asset("assets/icons/Heart Icon.svg"),
-                onPressed: () {},
+                icon: SvgPicture.asset(
+                  "assets/icons/Plus Icon.svg",
+                  color: MenuState.bookAppointment == selectedMenu
+                      ? kPrimaryColor
+                      : inActiveIconColor,
+                ),
+                onPressed: () =>
+                    Navigator.pushNamed(context, BookAppointment.routeName),
               ),
               IconButton(
-                icon: SvgPicture.asset("assets/icons/Chat bubble Icon.svg"),
-                onPressed: () {},
+                icon: SvgPicture.asset(
+                  "assets/icons/faq2.svg",
+                  color: MenuState.faqPage == selectedMenu
+                      ? kPrimaryColor
+                      : inActiveIconColor,
+                ),
+                onPressed: () => Navigator.pushNamed(context, FAQS.routeName),
               ),
               IconButton(
                 icon: SvgPicture.asset(
