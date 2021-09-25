@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:cureit/routes.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(MyApp());
 }
 

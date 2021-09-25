@@ -18,6 +18,7 @@ class _SignInPageState extends State<SignInPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       body: Stack(fit: StackFit.expand, children: <Widget>[
         SvgPicture.asset(
           'assets/icons/Sign_Up_bg.svg',

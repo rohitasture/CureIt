@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "167257699570",
+    "project_id": "cureit-b80c3",
+    "storage_bucket": "cureit-b80c3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:167257699570:android:3b118cc6780fe17f760c6b",
+        "android_client_info": {
+          "package_name": "com.example.cureit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "167257699570-5bs45brj7ufv949cgt52b641flij6csr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3s3Pc8sxJvGdI7zQ548gJyO18WsQh108"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "167257699570-5bs45brj7ufv949cgt52b641flij6csr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
