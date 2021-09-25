@@ -31,7 +31,7 @@ class _BasicLayoutState extends State<BasicLayout> {
         ClipPath(
           clipper: CustomShapeClipper(),
           child: Container(
-            height: 400.0,
+            height: 300.0,
             decoration: BoxDecoration(
                 gradient: LinearGradient(colors: [firstColor, secondColor])),
             child: Column(
