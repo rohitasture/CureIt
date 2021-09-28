@@ -1,5 +1,9 @@
+import 'package:cureit/authentication.dart';
 import 'package:cureit/screens/home_page/home_page.dart';
+import 'package:cureit/screens/welcome/forgot_password.dart';
 import 'package:cureit/screens/welcome/sign_up.dart';
+import 'package:cureit/validator.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -49,6 +53,8 @@ class _SignInPageState extends State<SignInPage> {
                     margin: EdgeInsets.all(10),
                     child: TextFormField(
                         controller: _email,
+                        validator: (value) =>
+                            Validator.validateEmail(email: _email.text),
                         decoration: InputDecoration(
                             prefixIcon: Icon(Icons.email),
                             border: OutlineInputBorder(),
@@ -62,6 +68,8 @@ class _SignInPageState extends State<SignInPage> {
                     child: TextFormField(
                         controller: _password,
                         obscureText: true,
+                        validator: (value) => Validator.validatePassword(
+                            password: _password.text),
                         decoration: InputDecoration(
                             prefixIcon: Icon(Icons.lock),
                             border: OutlineInputBorder(),
@@ -74,7 +82,8 @@ class _SignInPageState extends State<SignInPage> {
                     alignment: Alignment.topRight,
                     child: GestureDetector(
                         onTap: () => {
-                              Navigator.pushNamed(context, SignUpPage.routeName)
+                              Navigator.pushNamed(
+                                  context, ForgotPassword.routeName)
                             },
                         child: Text(
                           "Forgot Password?",
@@ -89,7 +98,16 @@ class _SignInPageState extends State<SignInPage> {
                       color: Colors.amber),
                   child: MaterialButton(
                     onPressed: () async {
-                      Navigator.pushNamed(context, HomeScreen.routeName);
+                      User? user = await AuthFunctions.signIn(
+                          email: _email.text,
+                          password: _password.text,
+                          context: context);
+                      print(user);
+                      if (user != null) {
+                        Navigator.pushNamed(context, HomeScreen.routeName);
+                      } else {
+                        print("some error occured !!");
+                      }
                     },
                     child: Text('Login'),
                   ),

@@ -1,5 +1,6 @@
 import 'package:cureit/screens/FAQ_page/faq_page.dart';
 import 'package:cureit/screens/profile_page/profile_page.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'screens/home_page/components/health_issues.dart';
 import './screens/book_appointment/book_appointment.dart';
@@ -15,6 +16,7 @@ class MyStatefulWidget extends StatefulWidget {
 /// This is the private State class that goes with MyStatefulWidget.
 class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   int _selectedIndex = 0;
+
   static const TextStyle optionStyle =
       TextStyle(fontSize: 30, fontWeight: FontWeight.bold, color: Colors.black);
   static const List<Widget> _widgetOptions = <Widget>[

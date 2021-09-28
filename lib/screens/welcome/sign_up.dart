@@ -1,5 +1,8 @@
+import 'package:cureit/authentication.dart';
 import 'package:cureit/screens/home_page/home_page.dart';
 import 'package:cureit/screens/welcome/sign_in.dart';
+import 'package:cureit/validator.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -49,6 +52,8 @@ class _SignUpPageState extends State<SignUpPage> {
                     margin: EdgeInsets.all(10),
                     child: TextFormField(
                         controller: _name,
+                        validator: (value) =>
+                            Validator.validateName(name: _name.text),
                         decoration: InputDecoration(
                             prefixIcon: Icon(Icons.person),
                             border: OutlineInputBorder(),
@@ -61,6 +66,8 @@ class _SignUpPageState extends State<SignUpPage> {
                     margin: EdgeInsets.all(10),
                     child: TextFormField(
                         controller: _email,
+                        validator: (value) =>
+                            Validator.validateEmail(email: _email.text),
                         decoration: InputDecoration(
                             prefixIcon: Icon(Icons.email),
                             border: OutlineInputBorder(),
@@ -74,6 +81,8 @@ class _SignUpPageState extends State<SignUpPage> {
                     child: TextFormField(
                         controller: _password,
                         obscureText: true,
+                        validator: (value) => Validator.validatePassword(
+                            password: _password.text),
                         decoration: InputDecoration(
                             prefixIcon: Icon(Icons.lock),
                             border: OutlineInputBorder(),
@@ -91,7 +100,16 @@ class _SignUpPageState extends State<SignUpPage> {
                       color: Colors.amber),
                   child: MaterialButton(
                     onPressed: () async {
-                      Navigator.pushNamed(context, HomeScreen.routeName);
+                      User? user = await AuthFunctions.SignUp(
+                          name: _name.text,
+                          email: _email.text,
+                          password: _password.text);
+                      print(user);
+                      if (user != null) {
+                        Navigator.pushNamed(context, HomeScreen.routeName);
+                      } else {
+                        print("some error occured !!");
+                      }
                     },
                     child: Text('Register'),
                   ),
