@@ -9,8 +9,9 @@ class WelcomeScreen extends StatelessWidget {
   static String routeName = "/welcome";
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-        body: Stack(
+    return SafeArea(
+        child: Scaffold(
+            body: Stack(
       fit: StackFit.expand,
       children: <Widget>[
         SvgPicture.asset(
@@ -102,6 +103,6 @@ class WelcomeScreen extends StatelessWidget {
           ),
         )
       ],
-    ));
+    )));
   }
 }
