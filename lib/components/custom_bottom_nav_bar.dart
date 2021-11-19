@@ -17,7 +17,7 @@ class CustomBottomNavBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Color inActiveIconColor = Color(0xFFB6B6B6);
+    final Color inActiveIconColor = Color(0xFF4FC3F7);
     return Container(
       padding: EdgeInsets.symmetric(vertical: 14),
       decoration: BoxDecoration(
@@ -26,7 +26,7 @@ class CustomBottomNavBar extends StatelessWidget {
           BoxShadow(
             offset: Offset(0, -15),
             blurRadius: 20,
-            color: Color(0xFFDADADA).withOpacity(0.15),
+            color: Color(0xFF0277BD).withOpacity(0.15),
           ),
         ],
         borderRadius: BorderRadius.only(

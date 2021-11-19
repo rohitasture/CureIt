@@ -10,7 +10,7 @@ void main() async {
 }
 
 ThemeData appTheme =
-    ThemeData(primaryColor: Color(0xFFF3791A), fontFamily: 'Oxygen');
+    ThemeData(primaryColor: Color(0xFF0277BD), fontFamily: 'Oxygen');
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.

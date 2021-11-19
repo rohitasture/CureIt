@@ -5,8 +5,8 @@ import 'package:cureit/components/custom_bottom_nav_bar.dart';
 import 'package:cureit/enums.dart';
 //import 'components/body.dart';
 
-Color firstColor = Color(0xFFF47D15);
-Color secondColor = Color(0xFFEF772C);
+Color firstColor = Color(0xFF0277BD);
+Color secondColor = Color(0xFF4FC3F7);
 List<String> locations = ['Bengalore (BLR)', 'New Delhi (DL)'];
 const TextStyle dropDownLabelStyle =
     TextStyle(color: Colors.white, fontSize: 16.0);
@@ -98,7 +98,7 @@ class _BasicLayoutState extends State<BasicLayout> {
                   height: 50.0,
                 ),
                 Text(
-                  'This page is \n${widget.heading}',
+                  '${widget.heading}',
                   style: TextStyle(fontSize: 24.0, color: Colors.white),
                   textAlign: TextAlign.center,
                 ),

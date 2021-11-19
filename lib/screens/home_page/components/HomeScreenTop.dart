@@ -2,8 +2,8 @@ import 'package:cureit/main.dart';
 import 'package:flutter/material.dart';
 import 'package:cureit/screens/home_page/components/CustomShapeClipper.dart';
 
-Color firstColor = Color(0xFFF47D15);
-Color secondColor = Color(0xFFEF772C);
+Color firstColor = Color(0xFF0277BD);
+Color secondColor = Color(0xFF4FC3F7);
 List<String> locations = ['Bengalore (BLR)', 'New Delhi (DL)'];
 const TextStyle dropDownLabelStyle =
     TextStyle(color: Colors.white, fontSize: 16.0);
