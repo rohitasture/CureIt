@@ -5,6 +5,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:cureit/components/custom_bottom_nav_bar.dart';
 import 'package:cureit/enums.dart';
+import 'package:circular_profile_avatar/circular_profile_avatar.dart';
 
 class MyProfile extends StatefulWidget {
   const MyProfile({Key? key}) : super(key: key);
@@ -20,7 +21,15 @@ class _MyProfileState extends State<MyProfile> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(children: <Widget>[
-        BasicLayout("Profile Page"),
+        BasicLayout("Your Profile"),
+        Container(
+            child: CircularProfileAvatar('',
+                child: Image.asset("assets/images/dp.png"),
+                borderColor: Colors.blueAccent,
+                borderWidth: 2,
+                elevation: 5,
+                imageFit: BoxFit.fitWidth,
+                radius: 50)),
         Container(child: Text("Welcome " + user!.displayName.toString())),
         Container(
             child: ElevatedButton(

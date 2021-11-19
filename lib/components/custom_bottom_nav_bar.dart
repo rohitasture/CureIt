@@ -43,7 +43,7 @@ class CustomBottomNavBar extends StatelessWidget {
                 icon: SvgPicture.asset(
                   "assets/icons/Shop Icon.svg",
                   color: MenuState.home == selectedMenu
-                      ? kPrimaryColor
+                      ? Colors.blue[800]
                       : inActiveIconColor,
                 ),
                 onPressed: () =>
@@ -52,8 +52,9 @@ class CustomBottomNavBar extends StatelessWidget {
               IconButton(
                 icon: SvgPicture.asset(
                   "assets/icons/Plus Icon.svg",
+                  height: 20,
                   color: MenuState.bookAppointment == selectedMenu
-                      ? kPrimaryColor
+                      ? Colors.blue[800]
                       : inActiveIconColor,
                 ),
                 onPressed: () =>
@@ -62,8 +63,9 @@ class CustomBottomNavBar extends StatelessWidget {
               IconButton(
                 icon: SvgPicture.asset(
                   "assets/icons/faq2.svg",
+                  height: 25,
                   color: MenuState.faqPage == selectedMenu
-                      ? kPrimaryColor
+                      ? Colors.blue[800]
                       : inActiveIconColor,
                 ),
                 onPressed: () => Navigator.pushNamed(context, FAQS.routeName),
@@ -72,7 +74,7 @@ class CustomBottomNavBar extends StatelessWidget {
                 icon: SvgPicture.asset(
                   "assets/icons/User Icon.svg",
                   color: MenuState.profile == selectedMenu
-                      ? kPrimaryColor
+                      ? Colors.blue[800]
                       : inActiveIconColor,
                 ),
                 onPressed: () =>

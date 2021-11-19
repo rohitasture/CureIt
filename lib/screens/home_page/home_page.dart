@@ -18,6 +18,15 @@ class HomeScreen extends StatelessWidget {
         child: Column(
           children: <Widget>[
             HomeScreenTopContainer(),
+            Container(
+              padding: EdgeInsets.all(20),
+              child: Text(
+                "Featured Doctors",
+                style: TextStyle(
+                  fontSize: 25,
+                ),
+              ),
+            ),
             Column(children: <Widget>[
               Container(
                 height: 200,
@@ -202,6 +211,7 @@ class HomeScreen extends StatelessWidget {
               SizedBox(
                 height: height * 0.05,
               ),
+              HealthIssues()
             ]),
           ],
         ),
