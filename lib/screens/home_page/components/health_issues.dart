@@ -7,37 +7,53 @@ class HealthIssues extends StatelessWidget {
     final double height = MediaQuery.of(context).size.height;
     final double width = MediaQuery.of(context).size.width;
 
-    return Scaffold(
-      backgroundColor: Colors.white,
-      body: Column(
-        children: [
+    return Container(
+      margin: const EdgeInsets.symmetric(vertical: 20.0),
+      height: 200.0,
+      color: Colors.blue,
+      child: ListView(
+        scrollDirection: Axis.horizontal,
+        children: <Widget>[
           Container(
-            height: 200,
+            width: 0.5 * width,
             child: Stack(
               children: [
                 Positioned(
-                    top: 0,
+                    top: 10,
                     left: 0.05 * width,
-                    child: Material(
+                    child: Card(
+                      //elevation: 10.0,
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10)),
                       child: Container(
-                        height: 180,
-                        width: width * 0.9,
+                        height: 150,
+                        width: 0.4 * width,
                         decoration: BoxDecoration(
-                          color: Colors.lightBlue[100],
                           borderRadius: BorderRadius.circular(10),
+                          image: DecorationImage(
+                            // fit: BoxFit.fill,
+                            image: AssetImage("assets/images/doctor.jpg"),
+                          ),
                         ),
                       ),
                     )),
+              ],
+            ),
+          ),
+          Container(
+            width: 0.5 * width,
+            child: Stack(
+              children: [
                 Positioned(
                     top: 10,
-                    left: 0.025 * width,
+                    left: 0.05 * width,
                     child: Card(
-                      elevation: 10.0,
+                      //elevation: 10.0,
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10)),
                       child: Container(
-                        height: 80,
-                        width: 0.175 * width,
+                        height: 150,
+                        width: 0.4 * width,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(10),
                           image: DecorationImage(
@@ -47,16 +63,23 @@ class HealthIssues extends StatelessWidget {
                         ),
                       ),
                     )),
+              ],
+            ),
+          ),
+          Container(
+            width: 0.5 * width,
+            child: Stack(
+              children: [
                 Positioned(
                     top: 10,
-                    left: 0.25 * width,
+                    left: 0.05 * width,
                     child: Card(
-                      elevation: 10.0,
+                      //elevation: 10.0,
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10)),
                       child: Container(
-                        height: 80,
-                        width: 0.175 * width,
+                        height: 150,
+                        width: 0.4 * width,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(10),
                           image: DecorationImage(
@@ -66,16 +89,23 @@ class HealthIssues extends StatelessWidget {
                         ),
                       ),
                     )),
+              ],
+            ),
+          ),
+          Container(
+            width: 0.5 * width,
+            child: Stack(
+              children: [
                 Positioned(
                     top: 10,
-                    left: 0.475 * width,
+                    left: 0.05 * width,
                     child: Card(
-                      elevation: 10.0,
+                      //elevation: 10.0,
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10)),
                       child: Container(
-                        height: 80,
-                        width: 0.175 * width,
+                        height: 150,
+                        width: 0.4 * width,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(10),
                           image: DecorationImage(
@@ -85,92 +115,23 @@ class HealthIssues extends StatelessWidget {
                         ),
                       ),
                     )),
+              ],
+            ),
+          ),
+          Container(
+            width: 0.5 * width,
+            child: Stack(
+              children: [
                 Positioned(
                     top: 10,
-                    left: 0.7 * width,
+                    left: 0.05 * width,
                     child: Card(
-                      elevation: 10.0,
+                      //elevation: 10.0,
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10)),
                       child: Container(
-                        height: 80,
-                        width: 0.175 * width,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
-                          image: DecorationImage(
-                            // fit: BoxFit.fill,
-                            image: AssetImage("assets/images/doctor.jpg"),
-                          ),
-                        ),
-                      ),
-                    )),
-                Positioned(
-                    top: 110,
-                    left: 0.025 * width,
-                    child: Card(
-                      elevation: 10.0,
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10)),
-                      child: Container(
-                        height: 80,
-                        width: 0.175 * width,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
-                          image: DecorationImage(
-                            // fit: BoxFit.fill,
-                            image: AssetImage("assets/images/doctor.jpg"),
-                          ),
-                        ),
-                      ),
-                    )),
-                Positioned(
-                    top: 110,
-                    left: 0.25 * width,
-                    child: Card(
-                      elevation: 10.0,
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10)),
-                      child: Container(
-                        height: 80,
-                        width: 0.175 * width,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
-                          image: DecorationImage(
-                            // fit: BoxFit.fill,
-                            image: AssetImage("assets/images/doctor.jpg"),
-                          ),
-                        ),
-                      ),
-                    )),
-                Positioned(
-                    top: 110,
-                    left: 0.475 * width,
-                    child: Card(
-                      elevation: 10.0,
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10)),
-                      child: Container(
-                        height: 80,
-                        width: 0.175 * width,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
-                          image: DecorationImage(
-                            // fit: BoxFit.fill,
-                            image: AssetImage("assets/images/doctor.jpg"),
-                          ),
-                        ),
-                      ),
-                    )),
-                Positioned(
-                    top: 110,
-                    left: 0.7 * width,
-                    child: Card(
-                      elevation: 10.0,
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10)),
-                      child: Container(
-                        height: 80,
-                        width: 0.175 * width,
+                        height: 150,
+                        width: 0.4 * width,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(10),
                           image: DecorationImage(
