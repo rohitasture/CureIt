@@ -1,10 +1,12 @@
 import 'package:cureit/components/basiclayout.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:cureit/components/custom_bottom_nav_bar.dart';
 import 'package:cureit/enums.dart';
 
 class BookAppointment extends StatelessWidget {
   const BookAppointment({Key? key}) : super(key: key);
+  static User? user = FirebaseAuth.instance.currentUser;
   static String routeName = "/book";
   @override
   Widget build(BuildContext context) {
@@ -25,6 +27,9 @@ class BookAppointment extends StatelessWidget {
             height: 200,
             child: Stack(
               children: [
+                Container(
+                  child: Text("Welcome " + user!.displayName.toString()),
+                ),
                 Positioned(
                     top: 10,
                     left: 0.05 * width,
@@ -65,7 +70,8 @@ class BookAppointment extends StatelessWidget {
                       width: 0.5 * width,
                       child: Column(
                         children: [
-                          Text("Text", style: TextStyle(fontSize: 20)),
+                          Text("Welcome " + user!.displayName.toString()),
+                          // Text("Text", style: TextStyle(fontSize: 20)),
                           Divider(
                             color: Colors.white,
                           ),

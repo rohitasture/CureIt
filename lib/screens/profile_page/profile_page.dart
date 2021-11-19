@@ -27,6 +27,7 @@ class _MyProfileState extends State<MyProfile> {
                 child: Text("Logout"),
                 onPressed: () async {
                   await FirebaseAuth.instance.signOut();
+                  Navigator.popUntil(context, ModalRoute.withName("/welcome"));
                   Navigator.of(context).pushReplacement(
                       MaterialPageRoute(builder: (context) => SignInPage()));
                 }))
