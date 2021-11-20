@@ -1,8 +1,10 @@
 import 'package:cureit/main.dart';
 import 'package:cureit/screens/home_page/components/HomeScreenTop.dart';
 import 'package:cureit/screens/home_page/components/categories.dart';
+import 'package:cureit/screens/home_page/components/explore.dart';
 import 'package:cureit/screens/home_page/components/health_issues.dart';
 import 'package:cureit/screens/home_page/docinfo.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:cureit/components/custom_bottom_nav_bar.dart';
 import 'package:cureit/enums.dart';
@@ -19,6 +21,18 @@ class HomeScreen extends StatelessWidget {
         child: Column(
           children: <Widget>[
             HomeScreenTopContainer(),
+            Container(
+              margin: EdgeInsets.fromLTRB(5, 0, 0, 0),
+              alignment: Alignment.topLeft,
+              child: Text(
+                "What are you looking for?",
+                textAlign: TextAlign.left,
+                style: TextStyle(
+                  fontSize: 20,
+                ),
+              ),
+            ),
+            Explore(),
             Container(
               padding: EdgeInsets.all(20),
               child: Text(

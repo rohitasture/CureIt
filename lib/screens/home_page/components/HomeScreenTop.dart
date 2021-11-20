@@ -26,7 +26,7 @@ class _HomeScreenTopContainerState extends State<HomeScreenTopContainer> {
         ClipPath(
           clipper: CustomShapeClipper(),
           child: Container(
-            height: 400.0,
+            height: 350.0,
             decoration: BoxDecoration(
                 gradient: LinearGradient(colors: [firstColor, secondColor])),
             child: Column(
@@ -90,7 +90,7 @@ class _HomeScreenTopContainerState extends State<HomeScreenTopContainer> {
                   ),
                 ),
                 SizedBox(
-                  height: 50.0,
+                  height: 15.0,
                 ),
                 Text(
                   'Search for\n doctors near you',
@@ -98,7 +98,7 @@ class _HomeScreenTopContainerState extends State<HomeScreenTopContainer> {
                   textAlign: TextAlign.center,
                 ),
                 SizedBox(
-                  height: 30.0,
+                  height: 20.0,
                 ),
                 Padding(
                   padding: EdgeInsets.symmetric(horizontal: 32.0),
