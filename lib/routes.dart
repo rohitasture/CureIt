@@ -1,6 +1,7 @@
 import 'package:cureit/screens/FAQ_page/faq_page.dart';
 import 'package:cureit/screens/book_appointment/book_appointment.dart';
 import 'package:cureit/screens/home_page/docinfo.dart';
+import 'package:cureit/screens/home_page/docpage.dart';
 import 'package:cureit/screens/profile_page/profile_page.dart';
 import 'package:cureit/screens/welcome/forgot_password.dart';
 import 'package:cureit/screens/welcome/sign_in.dart';
@@ -21,5 +22,6 @@ final Map<String, WidgetBuilder> routes = {
   ForgotPassword.routeName: (context) => ForgotPassword(),
   FAQS.routeName: (context) => FAQS(),
   BookAppointment.routeName: (context) => BookAppointment(),
-  DocInfoPage.routeName: (context) => DocInfoPage()
+  DocInfoPage.routeName: (context) => DocInfoPage(),
+  DoctorDetailPage.routeName: (context) => DoctorDetailPage()
 };
