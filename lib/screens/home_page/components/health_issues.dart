@@ -43,25 +43,24 @@ class HealthIssues extends StatelessWidget {
             width: 0.5 * width,
             child: Stack(
               children: [
-                Positioned(
-                    top: 15,
-                    left: 0.05 * width,
+                Container(
+                    margin: EdgeInsets.all(10.0),
                     child: Card(
-                      elevation: 10.0,
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10)),
-                      child: Container(
-                        height: 150,
-                        width: 0.4 * width,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
-                          image: DecorationImage(
-                            // fit: BoxFit.fill,
-                            image: AssetImage("assets/images/doctor.jpg"),
-                          ),
-                        ),
-                      ),
-                    )),
+                        elevation: 10.0,
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10)),
+                        child: Column(
+                          children: [
+                            Image(
+                              height: 150,
+                              width: 0.4 * width,
+                              image: AssetImage("assets/images/doctor.jpg"),
+                            ),
+                            Container(
+                              child: Text("Cough"),
+                            )
+                          ],
+                        ))),
               ],
             ),
           ),
@@ -69,25 +68,24 @@ class HealthIssues extends StatelessWidget {
             width: 0.5 * width,
             child: Stack(
               children: [
-                Positioned(
-                    top: 15,
-                    left: 0.05 * width,
+                Container(
+                    margin: EdgeInsets.all(10.0),
                     child: Card(
-                      elevation: 10.0,
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10)),
-                      child: Container(
-                        height: 150,
-                        width: 0.4 * width,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
-                          image: DecorationImage(
-                            // fit: BoxFit.fill,
-                            image: AssetImage("assets/images/doctor.jpg"),
-                          ),
-                        ),
-                      ),
-                    )),
+                        elevation: 10.0,
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10)),
+                        child: Column(
+                          children: [
+                            Image(
+                              height: 150,
+                              width: 0.4 * width,
+                              image: AssetImage("assets/images/doctor.jpg"),
+                            ),
+                            Container(
+                              child: Text("Cough"),
+                            )
+                          ],
+                        ))),
               ],
             ),
           ),
@@ -95,25 +93,24 @@ class HealthIssues extends StatelessWidget {
             width: 0.5 * width,
             child: Stack(
               children: [
-                Positioned(
-                    top: 15,
-                    left: 0.05 * width,
+                Container(
+                    margin: EdgeInsets.all(10.0),
                     child: Card(
-                      elevation: 10.0,
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10)),
-                      child: Container(
-                        height: 150,
-                        width: 0.4 * width,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
-                          image: DecorationImage(
-                            // fit: BoxFit.fill,
-                            image: AssetImage("assets/images/doctor.jpg"),
-                          ),
-                        ),
-                      ),
-                    )),
+                        elevation: 10.0,
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10)),
+                        child: Column(
+                          children: [
+                            Image(
+                              height: 150,
+                              width: 0.4 * width,
+                              image: AssetImage("assets/images/doctor.jpg"),
+                            ),
+                            Container(
+                              child: Text("Cough"),
+                            )
+                          ],
+                        ))),
               ],
             ),
           ),
@@ -121,25 +118,24 @@ class HealthIssues extends StatelessWidget {
             width: 0.5 * width,
             child: Stack(
               children: [
-                Positioned(
-                    top: 15,
-                    left: 0.05 * width,
+                Container(
+                    margin: EdgeInsets.all(10.0),
                     child: Card(
-                      elevation: 10.0,
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10)),
-                      child: Container(
-                        height: 150,
-                        width: 0.4 * width,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
-                          image: DecorationImage(
-                            // fit: BoxFit.fill,
-                            image: AssetImage("assets/images/doctor.jpg"),
-                          ),
-                        ),
-                      ),
-                    )),
+                        elevation: 10.0,
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10)),
+                        child: Column(
+                          children: [
+                            Image(
+                              height: 150,
+                              width: 0.4 * width,
+                              image: AssetImage("assets/images/doctor.jpg"),
+                            ),
+                            Container(
+                              child: Text("Cough"),
+                            )
+                          ],
+                        ))),
               ],
             ),
           ),
