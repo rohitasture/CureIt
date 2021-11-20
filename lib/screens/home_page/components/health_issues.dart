@@ -1,3 +1,4 @@
+import 'package:cureit/screens/home_page/healthinfo.dart';
 import 'package:flutter/material.dart';
 
 class HealthIssues extends StatelessWidget {
@@ -20,22 +21,27 @@ class HealthIssues extends StatelessWidget {
               children: [
                 Container(
                     margin: EdgeInsets.all(10.0),
-                    child: Card(
-                        elevation: 10.0,
-                        shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(10)),
-                        child: Column(
-                          children: [
-                            Image(
-                              height: 150,
-                              width: 0.4 * width,
-                              image: AssetImage("assets/images/doctor.jpg"),
-                            ),
-                            Container(
-                              child: Text("Cough"),
-                            )
-                          ],
-                        ))),
+                    child: InkWell(
+                      child: Card(
+                          elevation: 10.0,
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(10)),
+                          child: Column(
+                            children: [
+                              Image(
+                                height: 150,
+                                width: 0.4 * width,
+                                image: AssetImage("assets/images/doctor.jpg"),
+                              ),
+                              Container(
+                                child: Text("Cough"),
+                              )
+                            ],
+                          )),
+                      onTap: () {
+                        Navigator.pushNamed(context, HealthInfoPage.routeName);
+                      },
+                    )),
               ],
             ),
           ),

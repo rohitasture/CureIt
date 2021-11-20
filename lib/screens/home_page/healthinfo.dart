@@ -1,8 +1,8 @@
 import 'package:cureit/screens/home_page/colorScheme.dart';
 import 'package:flutter/material.dart';
 
-class DocInfoPage extends StatelessWidget {
-  static String routeName = "/docinfo";
+class HealthInfoPage extends StatelessWidget {
+  static String routeName = "/healthinfo";
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -10,17 +10,17 @@ class DocInfoPage extends StatelessWidget {
       theme: ThemeData(
         fontFamily: 'avenir',
       ),
-      home: docInfoPage(),
+      home: healthInfoPage(),
     );
   }
 }
 
-class docInfoPage extends StatefulWidget {
+class healthInfoPage extends StatefulWidget {
   @override
-  _docInfoPageState createState() => _docInfoPageState();
+  _healthInfoPageState createState() => _healthInfoPageState();
 }
 
-class _docInfoPageState extends State<docInfoPage> {
+class _healthInfoPageState extends State<healthInfoPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

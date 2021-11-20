@@ -3,7 +3,7 @@ import 'package:cureit/screens/home_page/components/HomeScreenTop.dart';
 import 'package:cureit/screens/home_page/components/categories.dart';
 import 'package:cureit/screens/home_page/components/explore.dart';
 import 'package:cureit/screens/home_page/components/health_issues.dart';
-import 'package:cureit/screens/home_page/docinfo.dart';
+import 'package:cureit/screens/home_page/healthinfo.dart';
 import 'package:cureit/screens/home_page/docpage.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -46,7 +46,7 @@ class HomeScreen extends StatelessWidget {
             Column(children: <Widget>[
               GestureDetector(
                 onTap: () {
-                  Navigator.pushNamed(context, DocInfoPage.routeName);
+                  Navigator.pushNamed(context, DoctorDetailPage.routeName);
                 },
                 child: Container(
                   height: 200,
