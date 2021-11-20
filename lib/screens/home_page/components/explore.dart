@@ -23,13 +23,13 @@ class Explore extends StatelessWidget {
                     child: Card(
                         elevation: 10.0,
                         shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(10)),
+                            borderRadius: BorderRadius.circular(20)),
                         child: Column(
                           children: [
                             Image(
                               height: 150,
                               width: 0.65 * width,
-                              image: AssetImage("assets/images/doctor.jpg"),
+                              image: AssetImage("assets/images/doctors.jpg"),
                             ),
                             Container(
                               child: Text("Doctors",
@@ -54,14 +54,15 @@ class Explore extends StatelessWidget {
                     child: Card(
                         elevation: 10.0,
                         shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(10)),
+                            borderRadius: BorderRadius.circular(20)),
                         child: Column(
                           children: [
                             Image(
-                              height: 150,
-                              width: 0.65 * width,
-                              image: AssetImage("assets/images/doctor.jpg"),
-                            ),
+                                height: 150,
+                                width: 0.65 * width,
+                                image: AssetImage(
+                                    "assets/images/haelthissues.jpg"),
+                                fit: BoxFit.cover),
                             Container(
                               child: Text("Health Issues",
                                   style:

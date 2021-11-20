@@ -23,7 +23,6 @@ class _MyProfileState extends State<MyProfile> {
     return Scaffold(
       body: Column(children: <Widget>[
         ProfileLayout("Welcome " + user!.displayName.toString() + " 😉"),
-        Container(),
         Container(
             child: ElevatedButton(
                 child: Text("Logout"),

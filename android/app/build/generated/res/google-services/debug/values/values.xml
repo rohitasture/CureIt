@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">167257699570-5bs45brj7ufv949cgt52b641flij6csr.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">167257699570</string>
+    <string name="google_api_key" translatable="false">AIzaSyA3s3Pc8sxJvGdI7zQ548gJyO18WsQh108</string>
+    <string name="google_app_id" translatable="false">1:167257699570:android:3b118cc6780fe17f760c6b</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyA3s3Pc8sxJvGdI7zQ548gJyO18WsQh108</string>
+    <string name="google_storage_bucket" translatable="false">cureit-b80c3.appspot.com</string>
+    <string name="project_id" translatable="false">cureit-b80c3</string>
+</resources>

@@ -47,7 +47,7 @@ class _ProfileLayoutState extends State<ProfileLayout> {
                       Container(
                           margin: EdgeInsets.fromLTRB(115, 0, 50, 0),
                           child: CircularProfileAvatar('',
-                              child: Image.asset("assets/images/dp.png"),
+                              child: Image.asset("assets/images/profile.png"),
                               borderColor: Colors.white,
                               borderWidth: 3,
                               elevation: 20,
