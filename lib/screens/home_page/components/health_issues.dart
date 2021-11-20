@@ -8,6 +8,7 @@ class HealthIssues extends StatelessWidget {
     final double width = MediaQuery.of(context).size.width;
 
     return Container(
+<<<<<<< HEAD
       height: 200,
       child: Stack(
         children: [
@@ -138,6 +139,144 @@ class HealthIssues extends StatelessWidget {
                   ),
                 ),
               )),
+=======
+      margin: const EdgeInsets.symmetric(vertical: 20.0),
+      height: 200.0,
+      color: Colors.blue,
+      child: ListView(
+        scrollDirection: Axis.horizontal,
+        children: <Widget>[
+          Container(
+            width: 0.5 * width,
+            child: Stack(
+              children: [
+                Positioned(
+                    top: 10,
+                    left: 0.05 * width,
+                    child: Card(
+                      //elevation: 10.0,
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10)),
+                      child: Container(
+                        height: 150,
+                        width: 0.4 * width,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          image: DecorationImage(
+                            // fit: BoxFit.fill,
+                            image: AssetImage("assets/images/doctor.jpg"),
+                          ),
+                        ),
+                      ),
+                    )),
+              ],
+            ),
+          ),
+          Container(
+            width: 0.5 * width,
+            child: Stack(
+              children: [
+                Positioned(
+                    top: 10,
+                    left: 0.05 * width,
+                    child: Card(
+                      //elevation: 10.0,
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10)),
+                      child: Container(
+                        height: 150,
+                        width: 0.4 * width,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          image: DecorationImage(
+                            // fit: BoxFit.fill,
+                            image: AssetImage("assets/images/doctor.jpg"),
+                          ),
+                        ),
+                      ),
+                    )),
+              ],
+            ),
+          ),
+          Container(
+            width: 0.5 * width,
+            child: Stack(
+              children: [
+                Positioned(
+                    top: 10,
+                    left: 0.05 * width,
+                    child: Card(
+                      //elevation: 10.0,
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10)),
+                      child: Container(
+                        height: 150,
+                        width: 0.4 * width,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          image: DecorationImage(
+                            // fit: BoxFit.fill,
+                            image: AssetImage("assets/images/doctor.jpg"),
+                          ),
+                        ),
+                      ),
+                    )),
+              ],
+            ),
+          ),
+          Container(
+            width: 0.5 * width,
+            child: Stack(
+              children: [
+                Positioned(
+                    top: 10,
+                    left: 0.05 * width,
+                    child: Card(
+                      //elevation: 10.0,
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10)),
+                      child: Container(
+                        height: 150,
+                        width: 0.4 * width,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          image: DecorationImage(
+                            // fit: BoxFit.fill,
+                            image: AssetImage("assets/images/doctor.jpg"),
+                          ),
+                        ),
+                      ),
+                    )),
+              ],
+            ),
+          ),
+          Container(
+            width: 0.5 * width,
+            child: Stack(
+              children: [
+                Positioned(
+                    top: 10,
+                    left: 0.05 * width,
+                    child: Card(
+                      //elevation: 10.0,
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10)),
+                      child: Container(
+                        height: 150,
+                        width: 0.4 * width,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          image: DecorationImage(
+                            // fit: BoxFit.fill,
+                            image: AssetImage("assets/images/doctor.jpg"),
+                          ),
+                        ),
+                      ),
+                    )),
+              ],
+            ),
+          ),
+>>>>>>> 209a8f9c27375f2c6f0061e212eddbfa85e6c0fe
         ],
       ),
     );
