@@ -214,8 +214,14 @@ class HomeScreen extends StatelessWidget {
                   ],
                 ),
               ),
-              SizedBox(
-                height: height * 0.05,
+              Container(
+                padding: EdgeInsets.all(10),
+                child: Text(
+                  "Common Health Issues",
+                  style: TextStyle(
+                    fontSize: 25,
+                  ),
+                ),
               ),
               HealthIssues()
             ]),

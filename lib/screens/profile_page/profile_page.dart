@@ -1,4 +1,5 @@
 import 'package:cureit/components/basiclayout.dart';
+import 'package:cureit/components/profileLayout.dart';
 import 'package:cureit/screens/welcome/sign_in.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -21,16 +22,7 @@ class _MyProfileState extends State<MyProfile> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(children: <Widget>[
-        BasicLayout("Your Profile"),
-        Container(
-            child: CircularProfileAvatar('',
-                child: Image.asset("assets/images/dp.png"),
-                borderColor: Colors.blueAccent,
-                borderWidth: 2,
-                elevation: 5,
-                imageFit: BoxFit.fitWidth,
-                radius: 50)),
-        Container(child: Text("Welcome " + user!.displayName.toString())),
+        ProfileLayout("Welcome " + user!.displayName.toString() + " 😉"),
         Container(
             child: ElevatedButton(
                 child: Text("Logout"),
