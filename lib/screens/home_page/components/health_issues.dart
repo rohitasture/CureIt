@@ -33,6 +33,7 @@ class HealthIssues extends StatelessWidget {
                                 height: 150,
                                 width: 0.4 * width,
                                 image: AssetImage("assets/images/anxiety.png"),
+                                fit: BoxFit.cover,
                               ),
                               Container(
                                 child: Text("Anxiety"),
@@ -62,6 +63,7 @@ class HealthIssues extends StatelessWidget {
                               height: 150,
                               width: 0.4 * width,
                               image: AssetImage("assets/images/fever.png"),
+                              fit: BoxFit.cover,
                             ),
                             Container(
                               child: Text("Fever"),
@@ -87,6 +89,7 @@ class HealthIssues extends StatelessWidget {
                               height: 150,
                               width: 0.4 * width,
                               image: AssetImage("assets/images/cough.jpg"),
+                              fit: BoxFit.cover,
                             ),
                             Container(
                               child: Text("Cough"),
@@ -112,6 +115,7 @@ class HealthIssues extends StatelessWidget {
                               height: 150,
                               width: 0.4 * width,
                               image: AssetImage("assets/images/headache.jpg"),
+                              fit: BoxFit.cover,
                             ),
                             Container(
                               child: Text("Headache"),
@@ -139,7 +143,7 @@ class HealthIssues extends StatelessWidget {
                               image: AssetImage("assets/images/doctor.jpg"),
                             ),
                             Container(
-                              child: Text("Cough"),
+                              child: Text("Stomach ache"),
                             )
                           ],
                         ))),
