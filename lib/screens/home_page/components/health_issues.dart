@@ -11,7 +11,7 @@ class HealthIssues extends StatelessWidget {
     return Container(
       margin: const EdgeInsets.symmetric(vertical: 20.0),
       height: 200.0,
-      color: Colors.blue[50],
+      color: Colors.white,
       child: ListView(
         scrollDirection: Axis.horizontal,
         children: <Widget>[
@@ -23,6 +23,7 @@ class HealthIssues extends StatelessWidget {
                     margin: EdgeInsets.all(10.0),
                     child: InkWell(
                       child: Card(
+                          shadowColor: Colors.blue[100],
                           elevation: 10.0,
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(10)),
@@ -31,10 +32,10 @@ class HealthIssues extends StatelessWidget {
                               Image(
                                 height: 150,
                                 width: 0.4 * width,
-                                image: AssetImage("assets/images/doctor.jpg"),
+                                image: AssetImage("assets/images/anxiety.png"),
                               ),
                               Container(
-                                child: Text("Cough"),
+                                child: Text("Anxiety"),
                               )
                             ],
                           )),
@@ -60,7 +61,32 @@ class HealthIssues extends StatelessWidget {
                             Image(
                               height: 150,
                               width: 0.4 * width,
-                              image: AssetImage("assets/images/doctor.jpg"),
+                              image: AssetImage("assets/images/fever.png"),
+                            ),
+                            Container(
+                              child: Text("Fever"),
+                            )
+                          ],
+                        ))),
+              ],
+            ),
+          ),
+          Container(
+            width: 0.5 * width,
+            child: Stack(
+              children: [
+                Container(
+                    margin: EdgeInsets.all(10.0),
+                    child: Card(
+                        elevation: 10.0,
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10)),
+                        child: Column(
+                          children: [
+                            Image(
+                              height: 150,
+                              width: 0.4 * width,
+                              image: AssetImage("assets/images/cough.jpg"),
                             ),
                             Container(
                               child: Text("Cough"),
@@ -85,35 +111,10 @@ class HealthIssues extends StatelessWidget {
                             Image(
                               height: 150,
                               width: 0.4 * width,
-                              image: AssetImage("assets/images/doctor.jpg"),
+                              image: AssetImage("assets/images/headache.jpg"),
                             ),
                             Container(
-                              child: Text("Cough"),
-                            )
-                          ],
-                        ))),
-              ],
-            ),
-          ),
-          Container(
-            width: 0.5 * width,
-            child: Stack(
-              children: [
-                Container(
-                    margin: EdgeInsets.all(10.0),
-                    child: Card(
-                        elevation: 10.0,
-                        shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(10)),
-                        child: Column(
-                          children: [
-                            Image(
-                              height: 150,
-                              width: 0.4 * width,
-                              image: AssetImage("assets/images/doctor.jpg"),
-                            ),
-                            Container(
-                              child: Text("Cough"),
+                              child: Text("Headache"),
                             )
                           ],
                         ))),

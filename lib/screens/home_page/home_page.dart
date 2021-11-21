@@ -92,7 +92,7 @@ class HomeScreen extends StatelessWidget {
                             width: 0.45 * width,
                             child: Column(
                               children: [
-                                Text("Aryan Kukreja",
+                                Text("Dr. Aryan Kukreja",
                                     style: TextStyle(fontSize: 20)),
                                 Divider(
                                   color: Colors.white,
@@ -158,7 +158,7 @@ class HomeScreen extends StatelessWidget {
                             width: 0.45 * width,
                             child: Column(
                               children: [
-                                Text("Neeraj Chopra",
+                                Text("Dr. Amit Chopra",
                                     style: TextStyle(fontSize: 20)),
                                 Divider(
                                   color: Colors.white,
@@ -220,7 +220,7 @@ class HomeScreen extends StatelessWidget {
                           width: 0.45 * width,
                           child: Column(
                             children: [
-                              Text("Aryan Kukreja",
+                              Text("Dr. Vivek Pandey",
                                   style: TextStyle(fontSize: 20)),
                               Divider(
                                 color: Colors.white,
@@ -235,7 +235,7 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
               Container(
-                padding: EdgeInsets.all(10),
+                padding: EdgeInsets.all(1),
                 child: Text(
                   "Common Health Issues",
                   style: TextStyle(
