@@ -60,7 +60,7 @@ class _DoctorDetailState extends State<DoctorDetailPage> {
                     Container(
                       margin: EdgeInsets.only(bottom: 20),
                       child: Image.asset(
-                        "assets/images/doctor.jpg",
+                        "assets/images/aryan.png",
                       ),
                     ),
                     Container(
@@ -72,7 +72,7 @@ class _DoctorDetailState extends State<DoctorDetailPage> {
                           Container(
                             margin: EdgeInsets.only(top: 30),
                             child: Text(
-                              'Dr. Fred Mask',
+                              'Dr. Aryan Kukreja',
                               style: TextStyle(
                                 color: Colors.white,
                                 fontSize: 22,
@@ -84,7 +84,7 @@ class _DoctorDetailState extends State<DoctorDetailPage> {
                           Container(
                             margin: EdgeInsets.only(top: 10),
                             child: Text(
-                              'Heart surgen',
+                              'MBBS, MD AIIMS Delhi\nExperience: 10 years\nLocation : Gurugram',
                               style: TextStyle(
                                 color: Colors.white,
                                 fontSize: 15,
@@ -115,7 +115,7 @@ class _DoctorDetailState extends State<DoctorDetailPage> {
             Container(
               margin: EdgeInsets.only(left: 20, top: 30),
               child: Text(
-                'April 2020',
+                'November 2021',
                 style: TextStyle(
                   color: Color(0xff363636),
                   fontSize: 25,
@@ -162,11 +162,11 @@ class _DoctorDetailState extends State<DoctorDetailPage> {
                 childAspectRatio: 2.7,
                 children: [
                   doctorTimingsData("08:30 AM", true),
-                  doctorTimingsData("08:30 AM", false),
-                  doctorTimingsData("08:30 AM", false),
-                  doctorTimingsData("08:30 AM", false),
-                  doctorTimingsData("08:30 AM", false),
-                  doctorTimingsData("08:30 AM", false),
+                  doctorTimingsData("09:00 AM", false),
+                  doctorTimingsData("10:00 AM", false),
+                  doctorTimingsData("10:30 AM", false),
+                  doctorTimingsData("11:00 AM", false),
+                  doctorTimingsData("11:30 AM", false),
                 ],
               ),
             ),
@@ -190,12 +190,12 @@ class _DoctorDetailState extends State<DoctorDetailPage> {
                 physics: NeverScrollableScrollPhysics(),
                 childAspectRatio: 2.6,
                 children: [
-                  doctorTimingsData("08:30 AM", true),
-                  doctorTimingsData("08:30 AM", false),
-                  doctorTimingsData("08:30 AM", false),
-                  doctorTimingsData("08:30 AM", false),
-                  doctorTimingsData("08:30 AM", false),
-                  doctorTimingsData("08:30 AM", false),
+                  doctorTimingsData("04:00 PM", false),
+                  doctorTimingsData("04:30 PM", false),
+                  doctorTimingsData("05:30 PM", true),
+                  doctorTimingsData("06:30 PM", false),
+                  doctorTimingsData("07:30 PM", false),
+                  doctorTimingsData("08:30 PM", false),
                 ],
               ),
             ),
@@ -331,7 +331,7 @@ class _DoctorDetailState extends State<DoctorDetailPage> {
                 Container(
                   margin: EdgeInsets.only(left: 2),
                   child: Text(
-                    '08:30 AM',
+                    '$time',
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 12,
@@ -363,7 +363,7 @@ class _DoctorDetailState extends State<DoctorDetailPage> {
                 Container(
                   margin: EdgeInsets.only(left: 2),
                   child: Text(
-                    '08:30 AM',
+                    '$time',
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 12,

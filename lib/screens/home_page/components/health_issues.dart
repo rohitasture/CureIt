@@ -53,23 +53,28 @@ class HealthIssues extends StatelessWidget {
               children: [
                 Container(
                     margin: EdgeInsets.all(10.0),
-                    child: Card(
-                        elevation: 10.0,
-                        shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(10)),
-                        child: Column(
-                          children: [
-                            Image(
-                              height: 150,
-                              width: 0.4 * width,
-                              image: AssetImage("assets/images/fever.png"),
-                              fit: BoxFit.cover,
-                            ),
-                            Container(
-                              child: Text("Fever"),
-                            )
-                          ],
-                        ))),
+                    child: InkWell(
+                      child: Card(
+                          elevation: 10.0,
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(10)),
+                          child: Column(
+                            children: [
+                              Image(
+                                height: 150,
+                                width: 0.4 * width,
+                                image: AssetImage("assets/images/fever.png"),
+                                fit: BoxFit.cover,
+                              ),
+                              Container(
+                                child: Text("Fever"),
+                              )
+                            ],
+                          )),
+                      onTap: () {
+                        Navigator.pushNamed(context, HealthInfoPage.routeName);
+                      },
+                    )),
               ],
             ),
           ),
@@ -79,23 +84,28 @@ class HealthIssues extends StatelessWidget {
               children: [
                 Container(
                     margin: EdgeInsets.all(10.0),
-                    child: Card(
-                        elevation: 10.0,
-                        shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(10)),
-                        child: Column(
-                          children: [
-                            Image(
-                              height: 150,
-                              width: 0.4 * width,
-                              image: AssetImage("assets/images/cough.jpg"),
-                              fit: BoxFit.cover,
-                            ),
-                            Container(
-                              child: Text("Cough"),
-                            )
-                          ],
-                        ))),
+                    child: InkWell(
+                      child: Card(
+                          elevation: 10.0,
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(10)),
+                          child: Column(
+                            children: [
+                              Image(
+                                height: 150,
+                                width: 0.4 * width,
+                                image: AssetImage("assets/images/cough.jpg"),
+                                fit: BoxFit.cover,
+                              ),
+                              Container(
+                                child: Text("Cough"),
+                              )
+                            ],
+                          )),
+                      onTap: () {
+                        Navigator.pushNamed(context, HealthInfoPage.routeName);
+                      },
+                    )),
               ],
             ),
           ),
@@ -105,23 +115,28 @@ class HealthIssues extends StatelessWidget {
               children: [
                 Container(
                     margin: EdgeInsets.all(10.0),
-                    child: Card(
-                        elevation: 10.0,
-                        shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(10)),
-                        child: Column(
-                          children: [
-                            Image(
-                              height: 150,
-                              width: 0.4 * width,
-                              image: AssetImage("assets/images/headache.jpg"),
-                              fit: BoxFit.cover,
-                            ),
-                            Container(
-                              child: Text("Headache"),
-                            )
-                          ],
-                        ))),
+                    child: InkWell(
+                      child: Card(
+                          elevation: 10.0,
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(10)),
+                          child: Column(
+                            children: [
+                              Image(
+                                height: 150,
+                                width: 0.4 * width,
+                                image: AssetImage("assets/images/headache.jpg"),
+                                fit: BoxFit.cover,
+                              ),
+                              Container(
+                                child: Text("Headache"),
+                              )
+                            ],
+                          )),
+                      onTap: () {
+                        Navigator.pushNamed(context, HealthInfoPage.routeName);
+                      },
+                    )),
               ],
             ),
           ),
@@ -131,22 +146,28 @@ class HealthIssues extends StatelessWidget {
               children: [
                 Container(
                     margin: EdgeInsets.all(10.0),
-                    child: Card(
-                        elevation: 10.0,
-                        shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(10)),
-                        child: Column(
-                          children: [
-                            Image(
-                              height: 150,
-                              width: 0.4 * width,
-                              image: AssetImage("assets/images/doctor.jpg"),
-                            ),
-                            Container(
-                              child: Text("Stomach ache"),
-                            )
-                          ],
-                        ))),
+                    child: InkWell(
+                      child: Card(
+                          elevation: 10.0,
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(10)),
+                          child: Column(
+                            children: [
+                              Image(
+                                height: 150,
+                                width: 0.4 * width,
+                                image:
+                                    AssetImage("assets/images/stomachache.png"),
+                              ),
+                              Container(
+                                child: Text("Stomach ache"),
+                              )
+                            ],
+                          )),
+                      onTap: () {
+                        Navigator.pushNamed(context, HealthInfoPage.routeName);
+                      },
+                    )),
               ],
             ),
           ),

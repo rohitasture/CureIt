@@ -89,7 +89,81 @@ class FAQS extends StatelessWidget {
                 ),
               ],
             ),
-          )
+          ),
+          Card(
+            shape:
+                RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+            shadowColor: Colors.blueAccent,
+            margin: EdgeInsets.all(10),
+            elevation: 8,
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: <Widget>[
+                const ListTile(
+                  leading: Icon(
+                    Icons.question_answer,
+                    color: Colors.blue,
+                  ),
+                  title: Text(
+                    'How do I get my blood pressure checked?',
+                    style: TextStyle(color: Colors.blueGrey),
+                  ),
+                ),
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    Container(
+                        margin: EdgeInsets.all(10),
+                        child: Text(
+                          "Blood pressure checks are provided complimentary at each of our locations. Call the clinic nearest you for details.",
+                          style: TextStyle(fontSize: 16),
+                        )),
+                    TextButton(
+                      child: const Text('See More'),
+                      onPressed: () {/* ... */},
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ),
+          Card(
+            shape:
+                RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+            shadowColor: Colors.blueAccent,
+            margin: EdgeInsets.all(10),
+            elevation: 8,
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: <Widget>[
+                const ListTile(
+                  leading: Icon(
+                    Icons.question_answer,
+                    color: Colors.blue,
+                  ),
+                  title: Text(
+                    'How do I get my blood pressure checked?',
+                    style: TextStyle(color: Colors.blueGrey),
+                  ),
+                ),
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    Container(
+                        margin: EdgeInsets.all(10),
+                        child: Text(
+                          "Blood pressure checks are provided complimentary at each of our locations. Call the clinic nearest you for details.",
+                          style: TextStyle(fontSize: 16),
+                        )),
+                    TextButton(
+                      child: const Text('See More'),
+                      onPressed: () {/* ... */},
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ),
         ]),
       ),
       bottomNavigationBar: CustomBottomNavBar(selectedMenu: MenuState.faqPage),
