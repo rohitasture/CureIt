@@ -60,7 +60,7 @@ class HomeScreen extends StatelessWidget {
                               height: 180,
                               width: width * 0.9,
                               decoration: BoxDecoration(
-                                color: Colors.lightBlue[100],
+                                color: Colors.indigoAccent[100],
                                 borderRadius: BorderRadius.circular(10),
                               ),
                             ),
@@ -79,7 +79,7 @@ class HomeScreen extends StatelessWidget {
                                 borderRadius: BorderRadius.circular(10),
                                 image: DecorationImage(
                                   // fit: BoxFit.fill,
-                                  image: AssetImage("assets/images/doctor.jpg"),
+                                  image: AssetImage("assets/images/aryan.png"),
                                 ),
                               ),
                             ),
@@ -126,7 +126,7 @@ class HomeScreen extends StatelessWidget {
                               height: 180,
                               width: width * 0.9,
                               decoration: BoxDecoration(
-                                color: Colors.lightBlue[100],
+                                color: Colors.indigoAccent[100],
                                 borderRadius: BorderRadius.circular(10),
                               ),
                             ),
@@ -192,7 +192,7 @@ class HomeScreen extends StatelessWidget {
                                 height: 180,
                                 width: width * 0.9,
                                 decoration: BoxDecoration(
-                                  color: Colors.lightBlue[100],
+                                  color: Colors.indigoAccent[100],
                                   borderRadius: BorderRadius.circular(10),
                                 ),
                               ),

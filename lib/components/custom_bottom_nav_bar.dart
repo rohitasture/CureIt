@@ -17,11 +17,13 @@ class CustomBottomNavBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Color inActiveIconColor = Color(0xFF4FC3F7);
+    final Color inActiveIconColor = Color(0xFFFFFFFF);
+    final Color activeIconColor = Color(0xFFEF9A9A);
     return Container(
       padding: EdgeInsets.symmetric(vertical: 14),
       decoration: BoxDecoration(
-        color: Colors.white,
+        //gradient: LinearGradient(colors: [firstColor, secondColor]),
+        color: Colors.indigo[400],
         boxShadow: [
           BoxShadow(
             offset: Offset(0, -15),
@@ -43,7 +45,7 @@ class CustomBottomNavBar extends StatelessWidget {
                 icon: SvgPicture.asset(
                   "assets/icons/Shop Icon.svg",
                   color: MenuState.home == selectedMenu
-                      ? Colors.blue[800]
+                      ? activeIconColor
                       : inActiveIconColor,
                 ),
                 onPressed: () =>
@@ -54,7 +56,7 @@ class CustomBottomNavBar extends StatelessWidget {
                   "assets/icons/Plus Icon.svg",
                   height: 20,
                   color: MenuState.bookAppointment == selectedMenu
-                      ? Colors.blue[800]
+                      ? activeIconColor
                       : inActiveIconColor,
                 ),
                 onPressed: () =>
@@ -65,7 +67,7 @@ class CustomBottomNavBar extends StatelessWidget {
                   "assets/icons/faq2.svg",
                   height: 25,
                   color: MenuState.faqPage == selectedMenu
-                      ? Colors.blue[800]
+                      ? activeIconColor
                       : inActiveIconColor,
                 ),
                 onPressed: () => Navigator.pushNamed(context, FAQS.routeName),
@@ -74,7 +76,7 @@ class CustomBottomNavBar extends StatelessWidget {
                 icon: SvgPicture.asset(
                   "assets/icons/User Icon.svg",
                   color: MenuState.profile == selectedMenu
-                      ? Colors.blue[800]
+                      ? activeIconColor
                       : inActiveIconColor,
                 ),
                 onPressed: () =>

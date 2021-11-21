@@ -35,7 +35,7 @@ class _MyProfileState extends State<MyProfile> {
           width: 0.9 * width,
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
-              color: Colors.blue[200],
+              color: Colors.white,
               boxShadow: [
                 new BoxShadow(
                   color: Colors.blue.shade300,
@@ -75,7 +75,7 @@ class _MyProfileState extends State<MyProfile> {
           width: 0.9 * width,
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
-              color: Colors.blue[200],
+              color: Colors.white,
               boxShadow: [
                 new BoxShadow(
                   color: Colors.blue.shade300,
@@ -115,7 +115,7 @@ class _MyProfileState extends State<MyProfile> {
           width: 0.9 * width,
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
-              color: Colors.blue[200],
+              color: Colors.white,
               boxShadow: [
                 new BoxShadow(
                   color: Colors.blue.shade300,
@@ -155,7 +155,7 @@ class _MyProfileState extends State<MyProfile> {
           width: 0.9 * width,
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
-              color: Colors.blue[200],
+              color: Colors.white,
               boxShadow: [
                 new BoxShadow(
                   color: Colors.blue.shade300,
@@ -202,7 +202,7 @@ class _MyProfileState extends State<MyProfile> {
               width: 0.9 * width,
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(20),
-                  color: Colors.blue[200],
+                  color: Colors.white,
                   boxShadow: [
                     new BoxShadow(
                       color: Colors.blue.shade300,
