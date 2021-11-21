@@ -36,6 +36,7 @@ class BookAppointment extends StatelessWidget {
                         "Select a Doctor or Category",
                         style: TextStyle(
                           fontSize: 25,
+                          color: Colors.white,
                           fontWeight: FontWeight.w600,
                         ),
                       ),
@@ -72,16 +73,16 @@ class BookAppointment extends StatelessWidget {
                         height: 20,
                       ),
                       Container(
-                        height: 400,
+                        height: 300,
                         child: SingleChildScrollView(
                           physics: BouncingScrollPhysics(),
                           child: Column(
                             children: <Widget>[
-                              createDocWidget("doc1.png", "Susan Thomas"),
-                              createDocWidget("doc2.png", "Paul Barbara"),
-                              createDocWidget("doc3.png", "Nancy Williams"),
-                              createDocWidget("doc1.png", "Susan Thomas"),
-                              createDocWidget("doc2.png", "Paul Barbara"),
+                              createDocWidget("doc2.png", "Aryan Kukreja"),
+                              createDocWidget("doc1.png", "Smriti Prabhu"),
+                              createDocWidget("doc2.png", "Narendra Sharma"),
+                              createDocWidget("doc3.png", "Minny Thomas"),
+                              createDocWidget("doc2.png", "Mayank Singh"),
                               createDocWidget("doc3.png", "Nancy Williams"),
                             ],
                           ),
@@ -106,10 +107,11 @@ class BookAppointment extends StatelessWidget {
       child: Column(
         children: <Widget>[
           Image.asset('assets/images/category/$imgName'),
-          Text(
-            "$title",
-            style: TextStyle(fontWeight: FontWeight.w800, fontSize: 17),
-          )
+          Text("$title",
+              style: TextStyle(
+                  fontWeight: FontWeight.w800,
+                  fontSize: 17,
+                  color: Colors.blueGrey))
         ],
       ),
     );
@@ -160,7 +162,7 @@ class BookAppointment extends StatelessWidget {
                       width: 200,
                       height: 50,
                       child: Text(
-                        "A brief about the doctor to be \nadded here. This is more like an \nintroduction about the doctor",
+                        "General Surgeon, MBBS, MD(surgery) AIIMS Delhi\nExperience: 10 years",
                         style: TextStyle(
                           fontSize: 12,
                           fontWeight: FontWeight.w400,

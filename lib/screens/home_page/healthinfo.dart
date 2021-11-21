@@ -42,7 +42,7 @@ class _healthInfoPageState extends State<healthInfoPage> {
               width: MediaQuery.of(context).size.width,
               child: Container(
                 padding: EdgeInsets.all(20),
-                child: Image.asset('assets/images/bg1.png'),
+                child: Image.asset('assets/images/anxiety.png'),
               ),
             ),
             Container(
@@ -65,26 +65,18 @@ class _healthInfoPageState extends State<healthInfoPage> {
                         children: <Widget>[
                           Container(
                             height: 100,
-                            width: 100,
-                            child: Image.asset('assets/images/doc1.png'),
+                            width: 80,
                           ),
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: <Widget>[
                               Text(
-                                "Dr. Susan Thomas",
+                                "Anxiety",
                                 style: TextStyle(
-                                  fontSize: 20,
-                                  fontWeight: FontWeight.w400,
-                                ),
+                                    fontSize: 50,
+                                    fontWeight: FontWeight.w800,
+                                    color: Colors.blueGrey),
                               ),
-                              Text(
-                                "Heart Surgeon - CK Hospital",
-                                style: TextStyle(
-                                  fontSize: 17,
-                                  fontWeight: FontWeight.w400,
-                                ),
-                              )
                             ],
                           )
                         ],
@@ -95,7 +87,7 @@ class _healthInfoPageState extends State<healthInfoPage> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: <Widget>[
                             Text(
-                              "About the Doctor",
+                              "About :",
                               style: TextStyle(
                                 fontSize: 18,
                                 fontWeight: FontWeight.w800,
@@ -105,7 +97,7 @@ class _healthInfoPageState extends State<healthInfoPage> {
                               height: 10,
                             ),
                             Text(
-                              "Please write the description of the doctor here. This will be a detailed information about the doctor and the roles and achievements that the doctor has had over the past years",
+                              "Anxiety is a feeling of fear, dread, and uneasiness. It might cause you to sweat, feel restless and tense, and have a rapid heartbeat. It can be a normal reaction to stress. For example, you might feel anxious when faced with a difficult problem at work, before taking a test, or before making an important decision.",
                               style: TextStyle(
                                 fontSize: 14,
                                 fontWeight: FontWeight.w400,
@@ -115,7 +107,19 @@ class _healthInfoPageState extends State<healthInfoPage> {
                               height: 10,
                             ),
                             Text(
-                              "Available Time Slots",
+                              "Symptoms: ",
+                              style: TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.w800,
+                              ),
+                            ),
+                            Text(
+                                "Symptoms include stress that's out of proportion to the impact of the event, inability to set aside a worry and restlessness."),
+                            SizedBox(
+                              height: 10,
+                            ),
+                            Text(
+                              "Available Treatments: ",
                               style: TextStyle(
                                 fontSize: 18,
                                 fontWeight: FontWeight.w800,
@@ -124,14 +128,27 @@ class _healthInfoPageState extends State<healthInfoPage> {
                             SizedBox(
                               height: 5,
                             ),
-                            timeSlotWidget("13", "MAY", "Consultation",
-                                "Sunday 9 am to 11.30 am"),
-                            timeSlotWidget("14", "MAY", "Consultation",
-                                "Monday 10 am to 12.30 am"),
-                            timeSlotWidget("1", "JUN", "Consultation",
-                                "Tuesday 8 am to 12.30 pm"),
-                            timeSlotWidget("3", "JUN", "Consultation",
-                                "Friday 8 am to 1 am"),
+                            Container(
+                              child: Text("Self Care",
+                                  style: TextStyle(
+                                    fontSize: 15,
+                                    fontWeight: FontWeight.w600,
+                                  )),
+                            ),
+                            Container(
+                              child: Text("Tharepies",
+                                  style: TextStyle(
+                                    fontSize: 15,
+                                    fontWeight: FontWeight.w600,
+                                  )),
+                            ),
+                            Container(
+                              child: Text("Medication",
+                                  style: TextStyle(
+                                    fontSize: 15,
+                                    fontWeight: FontWeight.w600,
+                                  )),
+                            )
                           ],
                         ),
                       )
