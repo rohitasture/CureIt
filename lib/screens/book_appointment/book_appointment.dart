@@ -37,6 +37,7 @@ class BookAppointment extends StatelessWidget {
                           "Select a Doctor or Category",
                           style: TextStyle(
                             fontSize: 25,
+                            color: Colors.white,
                             fontWeight: FontWeight.w600,
                           ),
                         ),
@@ -78,11 +79,11 @@ class BookAppointment extends StatelessWidget {
                             physics: BouncingScrollPhysics(),
                             child: Column(
                               children: <Widget>[
-                                createDocWidget("doc1.png", "Susan Thomas"),
-                                createDocWidget("doc2.png", "Paul Barbara"),
-                                createDocWidget("doc3.png", "Nancy Williams"),
-                                createDocWidget("doc1.png", "Susan Thomas"),
-                                createDocWidget("doc2.png", "Paul Barbara"),
+                                createDocWidget("doc2.png", "Aryan Kukreja"),
+                                createDocWidget("doc1.png", "Smriti Prabhu"),
+                                createDocWidget("doc2.png", "Narendra Sharma"),
+                                createDocWidget("doc3.png", "Minny Thomas"),
+                                createDocWidget("doc2.png", "Mayank Singh"),
                                 createDocWidget("doc3.png", "Nancy Williams"),
                               ],
                             ),
