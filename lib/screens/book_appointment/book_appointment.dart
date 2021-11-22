@@ -108,10 +108,11 @@ class BookAppointment extends StatelessWidget {
       child: Column(
         children: <Widget>[
           Image.asset('assets/images/category/$imgName'),
-          Text(
-            "$title",
-            style: TextStyle(fontWeight: FontWeight.w800, fontSize: 17),
-          )
+          Text("$title",
+              style: TextStyle(
+                  fontWeight: FontWeight.w800,
+                  fontSize: 17,
+                  color: Colors.blueGrey))
         ],
       ),
     );
@@ -162,7 +163,7 @@ class BookAppointment extends StatelessWidget {
                       width: 200,
                       height: 50,
                       child: Text(
-                        "A brief about the doctor to be \nadded here. This is more like an \nintroduction about the doctor",
+                        "General Surgeon, MBBS, MD(surgery) AIIMS Delhi\nExperience: 10 years",
                         style: TextStyle(
                           fontSize: 12,
                           fontWeight: FontWeight.w400,

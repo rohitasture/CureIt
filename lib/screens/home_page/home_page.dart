@@ -145,7 +145,8 @@ class HomeScreen extends StatelessWidget {
                                 borderRadius: BorderRadius.circular(10),
                                 image: DecorationImage(
                                   // fit: BoxFit.fill,
-                                  image: AssetImage("assets/images/doctor.jpg"),
+                                  image: AssetImage(
+                                      "assets/images/female_doc.png"),
                                 ),
                               ),
                             ),
@@ -158,7 +159,7 @@ class HomeScreen extends StatelessWidget {
                             width: 0.45 * width,
                             child: Column(
                               children: [
-                                Text("Dr. Amit Chopra",
+                                Text("Dr. Sakshi Chopra",
                                     style: TextStyle(fontSize: 20)),
                                 Divider(
                                   color: Colors.white,
@@ -211,8 +212,8 @@ class HomeScreen extends StatelessWidget {
                                   borderRadius: BorderRadius.circular(10),
                                   image: DecorationImage(
                                     // fit: BoxFit.fill,
-                                    image:
-                                        AssetImage("assets/images/doctor.jpg"),
+                                    image: AssetImage(
+                                        "assets/images/male_doc.jpg"),
                                   ),
                                 ),
                               ),

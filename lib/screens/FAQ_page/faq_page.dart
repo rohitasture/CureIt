@@ -68,7 +68,7 @@ class FAQS extends StatelessWidget {
                     color: Colors.blue,
                   ),
                   title: Text(
-                    'How do I get my blood pressure checked?',
+                    'How to book vaccination slot in India?',
                     style: TextStyle(color: Colors.blueGrey),
                   ),
                 ),
@@ -78,7 +78,7 @@ class FAQS extends StatelessWidget {
                     Container(
                         margin: EdgeInsets.all(10),
                         child: Text(
-                          "Blood pressure checks are provided complimentary at each of our locations. Call the clinic nearest you for details.",
+                          "Register on the Co-WIN Portal and schedule your vaccination appointment. https://www.cowin.gov.in/home",
                           style: TextStyle(fontSize: 16),
                         )),
                     TextButton(
@@ -105,7 +105,7 @@ class FAQS extends StatelessWidget {
                     color: Colors.blue,
                   ),
                   title: Text(
-                    'How do I get my blood pressure checked?',
+                    'Do antibiotics work against all infections?',
                     style: TextStyle(color: Colors.blueGrey),
                   ),
                 ),
@@ -115,7 +115,7 @@ class FAQS extends StatelessWidget {
                     Container(
                         margin: EdgeInsets.all(10),
                         child: Text(
-                          "Blood pressure checks are provided complimentary at each of our locations. Call the clinic nearest you for details.",
+                          "No. Antibiotics only work against infections caused by bacteria, fungi and certain parasites. They don't work against any infections caused by viruses. Viruses cause colds, the flu and most coughs and sore throats.",
                           style: TextStyle(fontSize: 16),
                         )),
                     TextButton(
@@ -142,7 +142,7 @@ class FAQS extends StatelessWidget {
                     color: Colors.blue,
                   ),
                   title: Text(
-                    'How do I get my blood pressure checked?',
+                    'How can I treat cold?',
                     style: TextStyle(color: Colors.blueGrey),
                   ),
                 ),
@@ -152,7 +152,7 @@ class FAQS extends StatelessWidget {
                     Container(
                         margin: EdgeInsets.all(10),
                         child: Text(
-                          "Blood pressure checks are provided complimentary at each of our locations. Call the clinic nearest you for details.",
+                          "Factually, nothing can cure a common cold. You can stick to a few remedies that can definitely make you feel better. ",
                           style: TextStyle(fontSize: 16),
                         )),
                     TextButton(

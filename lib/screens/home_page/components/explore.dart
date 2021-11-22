@@ -77,7 +77,7 @@ class Explore extends StatelessWidget {
                               decoration: BoxDecoration(
                                 image: DecorationImage(
                                     image: AssetImage(
-                                        'assets/images/hispital.jpg')),
+                                        'assets/images/hospital.jpg')),
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(0.0)),
                                 // color: Colors.redAccent,
@@ -116,19 +116,19 @@ class Explore extends StatelessWidget {
                               decoration: BoxDecoration(
                                 image: DecorationImage(
                                     image: AssetImage(
-                                        'assets/images/doctors.jpg')),
+                                        'assets/images/vaccines.jpg')),
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(0.0)),
                                 // color: Colors.redAccent,
                               ),
                             ),
                             Container(
-                              child: Text("Doctors",
+                              child: Text("Vaccination",
                                   style:
                                       TextStyle(fontWeight: FontWeight.bold)),
                             ),
                             Container(
-                              child: Text("Book Appointments",
+                              child: Text("Book your vaccine shots",
                                   style: TextStyle(fontSize: 10)),
                             )
                           ],
