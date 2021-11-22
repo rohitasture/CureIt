@@ -16,84 +16,86 @@ class BookAppointment extends StatelessWidget {
     final double width = MediaQuery.of(context).size.width;
 
     return Scaffold(
-      body: Stack(
-        children: <Widget>[
-          FAQLayout(""),
-          Container(
-            padding: EdgeInsets.only(left: 20, right: 20),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: <Widget>[
-                Padding(
-                  padding: EdgeInsets.only(left: 14, right: 10, top: 25),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: <Widget>[
-                      SizedBox(
-                        height: 20,
-                      ),
-                      Text(
-                        "Select a Doctor or Category",
-                        style: TextStyle(
-                          fontSize: 25,
-                          fontWeight: FontWeight.w600,
+      body: SingleChildScrollView(
+        child: Stack(
+          children: <Widget>[
+            FAQLayout(""),
+            Container(
+              padding: EdgeInsets.only(left: 20, right: 20),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Padding(
+                    padding: EdgeInsets.only(left: 14, right: 10, top: 25),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
+                        SizedBox(
+                          height: 20,
                         ),
-                      ),
-                      SizedBox(
-                        height: 20,
-                      ),
-                      Container(
-                        width: MediaQuery.of(context).size.width,
-                        height: 120,
-                        margin: EdgeInsets.only(top: 10),
-                        child: ListView(
-                          physics: BouncingScrollPhysics(),
-                          scrollDirection: Axis.horizontal,
-                          children: <Widget>[
-                            categoryContainer("category7.png", "CT-Scan"),
-                            categoryContainer("category1.png", "Ortho"),
-                            categoryContainer("category2.png", "Dietician"),
-                            categoryContainer("category3.png", "Physician"),
-                            categoryContainer("category4.png", "Paralysis"),
-                            categoryContainer("category5.png", "Cardiology"),
-                            categoryContainer("category6.png", "MRI - Scan"),
-                            categoryContainer("category8.png", "Gynaecology"),
-                          ],
+                        Text(
+                          "Select a Doctor or Category",
+                          style: TextStyle(
+                            fontSize: 25,
+                            fontWeight: FontWeight.w600,
+                          ),
                         ),
-                      ),
-                      Text(
-                        "Chief Doctors",
-                        style: TextStyle(
-                          fontSize: 25,
-                          fontWeight: FontWeight.w800,
+                        SizedBox(
+                          height: 20,
                         ),
-                      ),
-                      SizedBox(
-                        height: 20,
-                      ),
-                      Container(
-                        height: 400,
-                        child: SingleChildScrollView(
-                          physics: BouncingScrollPhysics(),
-                          child: Column(
+                        Container(
+                          width: MediaQuery.of(context).size.width,
+                          height: 120,
+                          margin: EdgeInsets.only(top: 10),
+                          child: ListView(
+                            physics: BouncingScrollPhysics(),
+                            scrollDirection: Axis.horizontal,
                             children: <Widget>[
-                              createDocWidget("doc1.png", "Susan Thomas"),
-                              createDocWidget("doc2.png", "Paul Barbara"),
-                              createDocWidget("doc3.png", "Nancy Williams"),
-                              createDocWidget("doc1.png", "Susan Thomas"),
-                              createDocWidget("doc2.png", "Paul Barbara"),
-                              createDocWidget("doc3.png", "Nancy Williams"),
+                              categoryContainer("category7.png", "CT-Scan"),
+                              categoryContainer("category1.png", "Ortho"),
+                              categoryContainer("category2.png", "Dietician"),
+                              categoryContainer("category3.png", "Physician"),
+                              categoryContainer("category4.png", "Paralysis"),
+                              categoryContainer("category5.png", "Cardiology"),
+                              categoryContainer("category6.png", "MRI - Scan"),
+                              categoryContainer("category8.png", "Gynaecology"),
                             ],
                           ),
                         ),
-                      )
-                    ],
-                  ),
-                )
-              ],
-            ),
-          )
-        ],
+                        Text(
+                          "Chief Doctors",
+                          style: TextStyle(
+                            fontSize: 25,
+                            fontWeight: FontWeight.w800,
+                          ),
+                        ),
+                        SizedBox(
+                          height: 20,
+                        ),
+                        Container(
+                          height: 400,
+                          child: SingleChildScrollView(
+                            physics: BouncingScrollPhysics(),
+                            child: Column(
+                              children: <Widget>[
+                                createDocWidget("doc1.png", "Susan Thomas"),
+                                createDocWidget("doc2.png", "Paul Barbara"),
+                                createDocWidget("doc3.png", "Nancy Williams"),
+                                createDocWidget("doc1.png", "Susan Thomas"),
+                                createDocWidget("doc2.png", "Paul Barbara"),
+                                createDocWidget("doc3.png", "Nancy Williams"),
+                              ],
+                            ),
+                          ),
+                        )
+                      ],
+                    ),
+                  )
+                ],
+              ),
+            )
+          ],
+        ),
       ),
       bottomNavigationBar:
           CustomBottomNavBar(selectedMenu: MenuState.bookAppointment),
